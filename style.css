@@ -1,0 +1,560 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Oct, 2023, 6:05:04 PM
+    Author     : Himanshi12
+*/
+.log{
+    background-image:url(https://i.pinimg.com/564x/77/14/90/7714901265ffbef9213ee82175b30174.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arimo', sans-serif;    
+    margin:0;
+    padding:0;
+    width:100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.b{
+    background-image:url(https://i.pinimg.com/564x/81/2d/76/812d7644092aa39c77d9f3322beac37e.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+.box,regbox{
+    width: 358px;
+    height: 417px;
+    background-image: linear-gradient(#7c9ce5, #7fadcd);
+    margin: 0;
+    padding: 30px;
+    top: 30%;
+    left: 50%;
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    transform: translate(-50%, -50);
+    box-sizing: border-box;  
+}
+.avtar{
+    margin: 0;
+    padding: 0;
+    width: 358px;
+    height: 417px;
+    top: 23px;
+    position: absolute;
+    left:-333px;
+    border-radius: 50%;
+    
+}
+
+.box h1{
+    margin:0;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.box p{
+    margin: 0;
+    padding: 0;
+    font-size:15px;
+    font-weight: bold;
+}
+.box input{
+    width:100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.box input[type="text"],.box input[type="password"]{
+    border:none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    
+}
+.box input[type="submit"]
+{
+    display: block;
+    border: none;
+    outline:none;
+    height: 35px;
+    width: 100px;
+    color:#000;
+    background:#eccc68;
+    font-size: 20px;
+    border-radius: 20px;
+     
+}
+.box input[type="button"]
+{
+    display: block;
+    border: none;
+    outline: none;
+    height: 35px;
+     width: 100px;
+    color:#000;
+    background: #eccc68;
+    font-size: 20px;
+    border-radius: 20px; 
+}
+.box input[type="submit"]:hover
+{
+   
+    border: none;
+    outline:none;
+    height: 35px;
+    color:#fff;
+    background:#ff6348;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+.box input[type="button"]:hover
+{
+    border: none;
+    outline:none;
+    height: 35px;
+    color:#fff;
+    background:#ff6348;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+#bt{
+   display:grid;
+   grid-template-columns:repeat(2,0.5fr);   
+}
+.regbox a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+.regbox a:hover{
+    color: #eccc68;
+}
+.regbox .avtar{
+    margin: -35px;
+    padding: 0;
+    width: 351px;
+    height: 417px;
+    top:8%;
+    position:absolute;
+    left: -317px;
+    border-radius: 5px;
+}
+.regbox h1{
+    margin-top:30px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;   
+}
+.regbox p{
+    margin: 0;
+    padding: 0;
+    font-size:15px;
+    font-weight: bold;
+    
+}
+.regbox input{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    
+}
+.regbox input[type="text"],
+.regbox input[type="password"]{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;  
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+.er{
+    margin-bottom: 30px;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 30px;
+    color: aliceblue;
+    left: 0;
+}
+.erlink{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 30px;
+  color: navajowhite;
+    
+}
+#header{
+    padding-bottom: 20px;
+    margin-bottom: 400px;
+    height:67px;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 45px;
+    font-family: serif;
+    width: 100%;
+    position:  absolute;
+    background-image: linear-gradient(#09203F,#537895);
+    border-radius: 2px;
+    border-style: groove;
+}
+#bc{
+    font-family: Arial, sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1199837043/photo/medicine-tablet-with-medical-background.jpg?s=612x612&w=0&k=20&c=8wezceHSLV0UNKMfjT0geWNNKPGcy90i2FSvVa3Y6u4=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:745px;
+    box-sizing: border-box;
+   
+}
+.box,main{
+    display:flex;
+    flex-direction: column;
+    color:white;
+   
+    text-align: left;
+    font-size:45px;
+    box-shadow: 10px 10px 15px black,-10px,-10px 15px black;
+    padding:20px;
+    margin:20px;
+    border-radius: 2%;
+    
+}
+.box.fl{
+    float:center;
+    width:70%
+}
+.med,regbox
+{
+    width:630px;
+    height: 450px;
+    background-image: linear-gradient(#7c9ce5, #7fadcd);
+    margin: 0;
+    padding: 20px;
+    top: 20%;
+    left:50%;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    box-sizing: border-box;  
+}
+.med p{
+    margin: 0;
+    padding: 0;
+    font-size:15px;
+    font-weight: bold;
+}
+.med input{
+    width:100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.med input[type="text"]{
+    border:none;
+   
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    
+}
+.med input[type="button"]:hover
+{
+    border: none;
+    outline:none;
+    height: 35px;
+    width: 90px;
+    color:#fff;
+    background:#ff6348;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+.med input[type="button"]
+{
+    display: block;
+    border: none;
+    outline: none;
+    width: 90px;
+    height: 35px;
+    color:#000;
+    background: #eccc68;
+    font-size: 20px;
+    border-radius: 20px;
+    
+}
+.bt{
+   display:grid;
+   grid-template-columns:repeat(6,1.5fr);   
+}
+.medlink{
+  position: absolute;
+ bottom: 25px;
+    right: 40px;
+  font-size: 30px;
+  color: dimgrey;
+}
+#footer
+{
+    
+    padding: 20px; 
+    text-align: center; 
+    position: absolute; 
+    width: 100%;
+    bottom: 0; 
+
+   
+   margin-bottom: 400px;
+   color: #ff6348;
+   font-size:15px ;
+   font-family: serif;
+   height: 67px;
+  
+
+   background-image: linear-gradient(#09203F,#537895);
+   border-radius:2px;
+   border-style: groove;
+}
+
+/*  home page css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background-color: #7fadcd;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style the hero section */
+.hero {
+    
+    background-image: url(https://i.pinimg.com/564x/b5/99/fc/b599fc20657d18afe86ed63cf61e3d28.jpg);
+    height:607px;
+    weight:100%;
+    background-size: cover;
+    text-align: right;
+    padding: 243px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 280px;
+    color: #fff;
+}
+.hero p{
+    color:#fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Style the products section */
+.products {
+    padding: 40px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+    background-color: #7fadcd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.logsec{
+   background-color: #7fadcd;
+    background-size: cover;
+    text-align: center;
+    padding: 54px;
+    color: white;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+.errimg{
+    padding:54px;
+    width:400px;
+    height: 300px;
+    border-radius:10px;
+   
+    left:10px;
+    
+}
+table 
+{
+    border-collapse: collapse;
+    width: 33%;
+    border-spacing: 2px;
+    background-color: #fff;
+    top:20%;
+    align-items: center;
+}
+
+th, td 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th 
+{
+    background-color: #537895;
+    
+}
+
+        tr:nth-child(even) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color:#ccc ;
+            color: black;
+        }
+        
+        .tab{
+           
+     
+         text-align: center;
+         padding-bottom:  100px;
+    color: white;    
+        }  
+        
+        #table{
+            top:20%;
+            left:10%;
+            
+}
+#abc{
+    font-family: Arial, sans-serif;
+    background-image:url(https://e1.pxfuel.com/desktop-wallpaper/964/37/desktop-wallpaper-secret-agent-secret-service-agent.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:745px;
+    box-sizing: border-box;
+   
+}
+
+ #compbc{
+    font-family: Arial, sans-serif;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOP_s1So8X2vQwFfWnbOybmASytGZ79aJMTenGs2sM1aRrr1_wEyZ7ShpaCW7rP4CoI9w&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:745px;
+    box-sizing: border-box;
+   
+} 
+ #welcome-message 
+ {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: indigo;
+            text-align: center;
+            font-size: 50px;
+            padding: 10px;
+            animation: blink 4s linear infinite;
+}
+#compwelcome-message 
+ {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: cadetblue;
+            text-align: center;
+            font-size: 50px;
+            padding: 10px;
+            animation: blink 4s linear infinite;
+}
+@keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }

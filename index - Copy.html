@@ -1,0 +1,125 @@
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page  import="xyz.Conn" contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medicine Billing</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript">
+        function insert()
+            {
+                document.form5.action="billinsert.jsp";
+                document.form5.submit();
+            }
+            
+        
+    </script>
+</head>
+<body>
+    <header>
+            <h1>BILLING INFORMATION</h1>
+         <nav>
+            <ul>
+                <li><a href="Login.html">LOGIN</a></li>
+                <li><a href="agent.html">MEDICINE</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="company.jsp">COMPANY</a></li>
+            </ul>
+        </nav>
+      </header>
+    <div class="billing-box">
+         
+        <div class="ins">
+            <form name="form5" action="bill.jsp" method="post">
+                <p >ID</p>
+                <input type="text" name="id" value="" required/>
+                <p>MEDICINE NAME</p>
+                <input type="text" name="medicinename" value="" required/>
+                <p>PRICE</p>
+                 <input type="text" name="price" value="" required/>
+                <p>QUANTITY</p>
+                 <input type="text" name="quantity" value="" required/>
+                <p>COMPANY</p>
+                 <input type="text" name="company" value="" required/>
+                 <div class="bt">
+                <p><input  type="button" value="INSERT" onclick="insert()"/></p>
+                </div>
+           <form>
+        </div>
+        
+        <h1>Medicine Billing</h1>
+        <table>
+            <thead>
+             <tr>
+                <th>Medicine ID</th>
+                <th>Medicine Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Company</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+             <%
+                       
+                String id=""; 
+                String medname="";
+                String quantity="";
+                String price="";
+                String company="";
+                Connection con=new Conn().con;
+                Statement st;
+              try{
+                con = DriverManager.getConnection("jdbc:derby://localhost:1527/Pharmacy","user1","user");
+                st = con.createStatement();
+               ResultSet rs = st.executeQuery("Select * from user1.BILL");
+         while(rs.next())
+         {
+     %>
+            <tr>
+                <td><%= rs.getString(1)%></td>
+                <td><%= rs.getString(2)%></td>
+                <td><%= rs.getString(3)%></td>
+                <td><%= rs.getString(4)%></td>
+                <td><%= rs.getString(5)%></td>
+                <td><button onclick="addToBill(<%= rs.getInt(1)%>)">Add to Bill</button></td>
+            </tr>
+         <%}
+                
+             rs.close();
+             st.close();
+       }
+     catch(SQLException e)
+     {
+           e.printStackTrace();
+     }
+    %>   
+    </tbody>
+            
+             Add more medicine items as needed 
+        </table>
+        <br>
+        
+        
+         
+       
+        <br>
+        <h2>Bill Summary</h2>
+        <div class="bill-summary">
+            <table>
+                 Display items in the bill here 
+            </table>
+            <button onclick="printBill()">Print</button>
+        </div>
+    </div>
+    
+    
+         
+    <script src="script.jsp"></script>
+</body>
+</html>
+

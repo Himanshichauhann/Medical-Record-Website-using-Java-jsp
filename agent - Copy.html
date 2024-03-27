@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AGENTS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link  href="style.css" rel="stylesheet" type="text/css"/>
+          <script type="text/javascript">
+            
+            function ainsert()
+            {
+                document.form3.action="agentinsert.jsp";
+                document.form3submit();
+            }
+            
+            function adelete()
+            {
+                document.form3.action="agentdelete.jsp";
+                document.form3.submit();
+            }
+            
+            function mupdate()
+            {
+                document.form3.action="agentupdate.jsp";
+                document.form3.submit();
+            }
+            </script>
+    </head>
+    <body id="bc">
+        
+        <header>
+            <h1>AGENTS INFORMATION</h1>
+        <nav>
+            <ul>
+                <li><a href="Login.html">LOGIN</a></li>
+                <li><a href="medicine.jsp">MEDICINE</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="company.html">COMPANY</a></li>
+            </ul>
+        </nav>
+      </header>
+        
+       
+        <div class="container">
+            <div class="regbox med">
+                
+               <form name="form3" action="agent.jsp" method="post">
+                <p >ID</p>
+                <input type="text" name="id" value="" />
+                <p>AGENT NAME</p>
+                <input type="text" name="agentname" value="" />
+                <p>AGE</p>
+                 <input type="text" name="age" value="" />
+                <p>PHONE NO</p>
+                 <input type="text" name="phoneno" value="" />
+               
+                <p>GENDER</p>
+                 <input type="text" name="gender" value="" />
+                <div class="bt">
+                <p ><input type="button" value="INSERT" onclick="ainsert()"/></p>
+                <p><input  type="button" value="DELETE" onclick="adelete()"/></p>
+                <p><input  type="button" value="UPDATE"/></p>
+                <p><input  type="button" value="DISPLAY"/></p>
+                <p><input  type="button" value="CLEAR"/></p>
+               
+                </form>
+           </div>
+        </div>
+        </div>
+            
+        
+        
+        
+        <section class="tab">
+        <table id="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Agent Name</th>
+                <th>Agent Age</th>
+                <th>Agent Phone</th>
+                <th>Agent Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>dolo</td>
+                <td>10</td>
+                <td>20</td>
+                <td>xyz</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+        </tbody>
+    </table>
+    </section>
+         
+      
+        
+              <a class="medlink" href="Login.html">LOGOUT</a>
+       
+        
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>PHARMACY MANAGEMENT</title>
+        <link href="./style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+            
+            function signup()
+            {
+                document.form1.action="signup.jsp";
+                document.form1.submit();
+            }
+        </script>
+    </head>
+    <body class="log">
+        
+        <section class="logsec">
+            <h2>Login to Pharmacy</h2>
+             <p>A trusted source for all your pharmaceutical needs.</p>
+        </section>
+        <div class="container">
+            <div class="regbox box">
+                <img class="avtar" src="image1.png">
+                <h1>LOGIN PAGE</h1>
+                <form name="form1" action="validate.jsp" method="post">
+                <p>USER NAME </p>
+                <input type="text" name="uname" value="" required>
+                <p>PASSWORD</p>
+                <input type="password" name="pass" value="" required>
+                <div id="bt">
+               
+                <p><input type="button" value="SIGN UP" onclick="signup()" /></p>
+                <p><input type="submit" value="SIGN IN" /></p>
+                 </div>
+                </form>
+           </div>
+        </div>
+       
+    </body>
+</html>
+

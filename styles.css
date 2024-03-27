@@ -1,0 +1,214 @@
+body 
+{
+            background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-backgrounds-photos%2Fpayment&psig=AOvVaw0npIK30_pjQ8IIJ6u5A4BI&ust=1697821778089000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJibwJrNgoIDFQAAAAAdAAAAABAE); /* Set your background image URL here */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+
+}
+h1 {
+            text-align: center;
+            color: #333; /* Text color */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white; /* Table background color */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+/*.billing-box {
+    max-width: 800px;
+    margin: 28px;
+    padding: 20px;
+    text-decoration: #000;
+    border: 1px solid black;
+}
+.billing-box input[type="text"]
+{
+    border-bottom: 1px solid #000;
+    font-size: 15px;
+    border-radius: 4px;
+    outline: none;
+    height: 35px;
+    width:300px;
+    font-size: 15px;
+    border-color: black;
+    box-sizing: border-box;
+   
+}
+.billing-box input{
+    width:500px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}*/
+
+.bill-summary {
+    margin-top: 20px;
+}
+.table 
+{
+    border-collapse: collapse;
+    width: 33%;
+    border-spacing: 2px;
+    background-color: #007BFF;
+    top:20%;
+    align-items: center;
+}
+
+.th, td 
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.th 
+{
+    background-color: #537895;
+    
+}
+
+.tr:nth-child(even) {
+            background-color: #007BFF;
+        }
+
+.tr:hover {
+            background-color:#fff ;
+            color: black;
+        }
+        
+.tab{
+           
+     
+         text-align: center;
+         padding-bottom:  100px;
+    color: white;    
+        }  
+        
+p{
+    margin: 0;
+    padding: 0;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.in{
+    display:flex;
+    margin:5px;
+}
+.ins{
+    
+    display:flex;
+    
+}
+input[type="button"]
+{
+    display: block;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 100px;
+    color:#000;
+    background: #eccc68;
+    font-size: 20px;
+    border-radius: 20px; 
+}
+
+input[type="button"]:hover
+{
+    border: none;
+    outline:none;
+    height: 35px;
+    color:#fff;
+    background:#ff6348;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+#bt{
+   display:grid;
+   grid-template-columns:repeat(2,0.5fr);   
+}
+
+header {
+    background-color: #7fadcd;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.medlink{
+  position: absolute;
+  bottom: -143px;
+  right: 40px;
+  font-size: 30px;
+  color: dimgrey;
+}
